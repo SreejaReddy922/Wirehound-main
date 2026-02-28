@@ -1,0 +1,10 @@
+# Binaries
+wirehound
+wirehound-*.pcap
+wirehound.exe
+
+# Sessions
+sessions/
+
+# OS specific
+.DS_Store
