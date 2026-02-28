@@ -1,6 +1,6 @@
 module wirehound
 
-go 1.23.0
+go 1.22.0
 
 require (
 	github.com/google/gopacket v1.1.19
