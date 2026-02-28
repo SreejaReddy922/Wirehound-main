@@ -1,13 +1,21 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.go" },
-    { "source": "/ws", "destination": "/api/index.go" },
-    { "source": "/(.*)", "destination": "/static/$1" }
-  ],
-  "functions": {
-    "api/index.go": {
-      "runtime": "go"
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.go"
+    },
+    {
+      "source": "/ws",
+      "destination": "/api/index.go"
+    },
+    {
+      "source": "/static/(.*)",
+      "destination": "/web/static/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/web/static/$1"
     }
-  }
+  ]
 }
